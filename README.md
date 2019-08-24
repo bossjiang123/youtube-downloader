@@ -1,8 +1,10 @@
 # youtube-downloader
 YouTube Content Download Tools
 
-## ytdl.sh   (Android, MSYS2, Linux, macOS)
+## ytdl.sh
+Kendi fork'layıp geliştirdiğim ve Android(termux), Linux, Windows(msys2), macOS platformlarında kolayca ve tamamen orijinal bir şekilde YouTube videolarını indirmeyi sağlayan bir shell script'idir.
+
 [Download](https://github.com/omerakgoz34/youtube-downloader/releases/download/v2.1/ytdl.sh) or `wget https://github.com/omerakgoz34/youtube-downloader/releases/download/v2.1/ytdl.sh`
-* Usage:   ./ytdl.sh <URL>
-* Dependencies: Python3, youtube-dl, FFmpeg.
-* Credits: omerakgoz34, Christoph Korn, QuidsUp
+* Kullanım: ./ytdl.sh <URL>
+* Bağımlılıklar: Python3, youtube-dl, FFmpeg.
+* Teşekkürler: QuidsUp ve Christoph Korn.
