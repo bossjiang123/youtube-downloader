@@ -5,7 +5,7 @@
 # Edited by Christoph Korn
 # Much much more edited by omerakgoz34 :)
 
-# v2.1 - 24 Aug 2019
+# v2.3 - 24 Aug 2019
 
 URL=$1
 DownOptionA=140
@@ -38,13 +38,13 @@ if [ -z $DownType ]; then
 	exit
 fi
 
-if [ $DownType == 1 ]; then
+if [ $DownType = 1 ]; then
     # MP4 + Audio
 
 	echo ""
     youtube-dl -F $URL
     echo ""
-
+	echo "Default: 136"
     echo -n "Select quality for Video (mp4): "
     read DownOptionV
     if [ -z $DownOptionV ]; then
@@ -83,19 +83,19 @@ if [ $DownType == 1 ]; then
 	rm -f "$FileV"
 	rm -f "$FileA"
 	echo ""
-	ehco ""
-	ehco ""
+	echo ""
+	echo ""
 	echo "* $Out created."
 	echo ""
 else
 
-if [ $DownType == 2 ]; then
+if [ $DownType = 2 ]; then
     # MP4
 
 	echo ""
 	youtube-dl -F $URL
     echo ""
-
+	echo "Default: 136"
     echo -n "Select quality for Video (mp4): "
     read DownOptionV
     if [ -z $DownOptionV ]; then
@@ -121,7 +121,7 @@ if [ $DownType == 2 ]; then
 	echo ""
 else
 
-if [ $DownType == 3 ]; then
+if [ $DownType = 3 ]; then
     # MP3
 
 	echo ""
