@@ -8,3 +8,5 @@ Kendi fork'layıp geliştirdiğim ve Android(termux), Linux, Windows(msys2), mac
 * Kullanım: `./ytdl.sh <URL>`
 * Bağımlılıklar: Python3, youtube-dl, FFmpeg.
 * Teşekkürler: QuidsUp ve Christoph Korn.
+
+**youtube-dl** yükleme: `pip install youtube-dl`
