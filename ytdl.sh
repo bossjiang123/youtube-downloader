@@ -5,7 +5,7 @@
 # Edited by Christoph Korn
 # Much much more edited by omerakgoz34 :)
 
-# v2.3 - 24 Aug 2019
+# v2.5 - 24 Aug 2019
 
 URL=$1
 DownOptionA=140
