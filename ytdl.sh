@@ -45,9 +45,9 @@ if [ $DownType == 1 ]; then
 	DownOptionA=140
 
 	echo ""
-	$FileV = $(youtube-dl --get-filename -f $DownOptionV $URL)
-	$FileA = $(youtube-dl --get-filename -f $DownOptionA $URL)
-	$Out = ${FileV:0:${#FileV}-16}
+	FileV = $(youtube-dl --get-filename -f $DownOptionV $URL)
+	FileA = $(youtube-dl --get-filename -f $DownOptionA $URL)
+	Out = ${FileV:0:${#FileV}-16}
 
 	youtube-dl -f $DownOptionV $URL
 	if [ -f $FileV ]; then
@@ -91,8 +91,6 @@ else
 fi
 fi
 fi
-
-
 
 # Done.
 exit
