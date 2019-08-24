@@ -1,11 +1,12 @@
-#!/bin/sh
+#!/usr/bin/env bash
+#!/bin/bash
 
 # youtube-dl downloader script.
 # Written by QuidsUp
 # Edited by Christoph Korn
-# Much much more edited by omerakgoz34 :)
+# Much much more edited and recreated by omerakgoz34 :)
 
-# v2.5 - 24 Aug 2019
+# v3 - 24 Aug 2019
 
 URL=$1
 DownOptionA=140
@@ -54,7 +55,7 @@ if [ $DownType = 1 ]; then
 	echo ""
 	FileV=$(youtube-dl --get-filename -f $DownOptionV $URL)
 	FileA=$(youtube-dl --get-filename -f $DownOptionA $URL)
-	Out=${FileV:0:${#FileV}-16}".mp4"
+	Out="${FileV:0:${#FileV}-16}.mp4"
 
 	youtube-dl -f $DownOptionV $URL -o "$FileV"
 	if [ ! -f "$FileV" ]; then
@@ -104,7 +105,7 @@ if [ $DownType = 2 ]; then
 
 	echo ""
 	FileV=$(youtube-dl --get-filename -f $DownOptionV $URL)
-	Out=${FileV:0:${#FileV}-16}".mp4"
+	Out="${FileV:0:${#FileV}-16}.mp4"
 
 	youtube-dl -f $DownOptionV $URL -o "$Out"
 	if [ ! -f "$Out" ]; then
@@ -126,7 +127,7 @@ if [ $DownType = 3 ]; then
 
 	echo ""
 	FileA=$(youtube-dl --get-filename -f $DownOptionA $URL)
-	Out=${FileA:0:${#FileA}-16}".mp3"
+	Out="${FileA:0:${#FileA}-16}.mp3"
 
 	youtube-dl -f $DownOptionA $URL -o "$FileA"
 	if [ ! -f "$FileA" ]; then
