@@ -26,6 +26,7 @@ echo ""
 echo "1 = video + audio"
 echo "2 = video only"
 echo "3 = audio"
+echo ""
 echo -n "Enter download type [1/2/3]: "
 read DownType
 echo ""
@@ -45,9 +46,9 @@ if [ $DownType == 1 ]; then
 	DownOptionA=140
 
 	echo ""
-	FileV = $(youtube-dl --get-filename -f $DownOptionV $URL)
-	FileA = $(youtube-dl --get-filename -f $DownOptionA $URL)
-	Out = ${FileV:0:${#FileV}-16}
+	FileV=$(youtube-dl --get-filename -f $DownOptionV $URL)
+	FileA=$(youtube-dl --get-filename -f $DownOptionA $URL)
+	Out=`${FileV:0:${#FileV}-16}.mp4`
 
 	youtube-dl -f $DownOptionV $URL
 	if [ -f $FileV ]; then
