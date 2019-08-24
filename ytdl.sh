@@ -30,7 +30,7 @@ echo -n "Enter download type [1/2/3]: "
 read DownType
 echo ""
 
-if [ $DownType == "1" ]; then
+if [ $DownType == 1 ]; then
     # video + audio
 
     youtube-dl -F $URL
@@ -75,12 +75,12 @@ if [ $DownType == "1" ]; then
 	rm -f $FileA
 else
 
-if [ $DownType == "2" ]; then
+if [ $DownType == 2 ]; then
     # video only
     echo "asd"
 else
 
-if [ $DownType == "3" ]; then
+if [ $DownType == 3 ]; then
     # audio
     echo "asd"
 else
