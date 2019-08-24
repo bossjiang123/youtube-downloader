@@ -7,7 +7,7 @@
 
 # v1.1 - 8 May 2019
 
-URL=$1
+$URL=$1
 
 # Help message
 if [ -z $URL ]; then
@@ -39,18 +39,18 @@ if [ $DownType == "1" ]; then
     echo -n "Select quality for Video [default 136]: "
     read DownOptionV
     if [ -z $DownOptionV ]; then
-        DownOptionV = 136
+        $DownOptionV = 136
     fi
 
     echo -n "Select quality for Audio [default 140]: "
     read DownOptionA
     if [ -z $DownOptionA ]; then
-        DownOptionA = 140
+        $DownOptionA = 140
 	fi
 	echo ""
-	FileV = $(youtube-dl --get-filename -f $DownOptionV $URL)
-	FileA = $(youtube-dl --get-filename -f $DownOptionA $URL)
-	Out = ${FileV:0:${#FileV}-16}
+	$FileV = $(youtube-dl --get-filename -f $DownOptionV $URL)
+	$FileA = $(youtube-dl --get-filename -f $DownOptionA $URL)
+	$Out = ${FileV:0:${#FileV}-16}
 
 	youtube-dl -f $DownOptionV $URL
 	if [ -f $FileV ]; then
