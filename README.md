@@ -9,7 +9,7 @@ Mevcut özellikler:
 * MP4 indirme
 * MP3 indirme (mp4a-->mp3)
 
-[Download](https://github.com/omerakgoz34/youtube-downloader/releases/download/v2.4/ytdl.sh) or `wget https://github.com/omerakgoz34/youtube-downloader/releases/download/v2.4/ytdl.sh`
+[Download](https://github.com/omerakgoz34/youtube-downloader/releases/download/v2.5/ytdl.sh) or `wget https://github.com/omerakgoz34/youtube-downloader/releases/download/v2.5/ytdl.sh`
 * Kullanım: `./ytdl.sh <URL>`
 * Bağımlılıklar: Python3, youtube-dl, FFmpeg.
 * Teşekkürler: QuidsUp ve Christoph Korn.
