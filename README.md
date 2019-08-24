@@ -16,3 +16,6 @@ Mevcut özellikler:
 
 **youtube-dl** yükleme: `pip install youtube-dl`
 Script'i çalıştırabilmek için önce `chmod +x ytdl.sh` yapmanız gerekebilir.
+
+## Yardım mı gerek?
+Bir sorun ile karşılaşırsanız **[SoftDevTR Discord](https://discord.gg/4aVWp5S)** sunucusu üzerinden bana(omerakgoz34) mesaj atabilir, **omerakgoz34@gmail.com** adresine email atabilir veya **[issues](https://github.com/omerakgoz34/youtube-downloader/issues)** bölümünden yeni bir hata bildirimi(issue) açıp sorununuzu bildirebilirsiniz.
