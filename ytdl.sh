@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-#!/bin/bash
+#!/usr/bin/bash
 
 # youtube-dl downloader script.
 # Written by QuidsUp
